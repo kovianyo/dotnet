@@ -22,3 +22,9 @@ steps:
   inputs:
     command: 'build'
     projects: 'kovi.csproj'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    projects: 'kovi.csproj'
