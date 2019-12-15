@@ -23,11 +23,6 @@ steps:
     command: 'build'
     projects: 'kovi.csproj'
 
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'publish'
-    publishWebProjects: false
-    projects: 'kovi.csproj'
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'
